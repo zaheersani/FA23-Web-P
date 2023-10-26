@@ -1,27 +1,29 @@
 const MyComp = (prop) => {
 
-    const myReactStyle = {
-        fontSize: 45,
-        color: 'red'
-    }
+    // console.log(prop)
 
-    let myMsg = <></>;
-    if (prop.msg) {
-        myMsg = <h3>Message: {prop.msg}</h3>
-    }
+    let msg;
+    if (prop.msg)
+        msg = <h3>User's Message: {prop.msg}</h3>
 
     return (
         <>
-            <h1 style={myReactStyle}>My Component # {prop.count}</h1>
-            {/* {prop.msg != undefined ? <h3>Message: {prop.msg}</h3> : <></>} */}
-            {myMsg}
+            <h1>My Custom Component # {prop.count}</h1>
+            {/* {prop.msg && <h3>Message: {prop.msg}</h3>} */}
+            {msg}
             <MyChildComp />
         </>
     )
 }
 
 const MyChildComp = () => {
-    return <span className="mystyle">My Child Component</span>
+    
+    const mystyle = {
+        fontSize: 25,
+        color: 'green'
+    }
+
+    return <h3 style={mystyle}>This is my Child Component</h3>
 }
 
-export { MyComp, MyChildComp }
+export {MyComp, MyChildComp}
