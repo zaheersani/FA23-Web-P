@@ -6,12 +6,15 @@ import Counter from './counter-q';
 import CounterP from './counter-p';
 import reportWebVitals from './reportWebVitals';
 
+import Users from './users-q';
+
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
     {/* <App /> */}
     {/* <Counter /> */}
-    <CounterP />
+    {/* <CounterP /> */}
+    <Users />
   </React.StrictMode>
 );
 
