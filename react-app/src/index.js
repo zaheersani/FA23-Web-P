@@ -7,6 +7,7 @@ import CounterP from './counter-p';
 import reportWebVitals from './reportWebVitals';
 
 import Users from './users-q';
+import Products from './products-p';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
@@ -14,7 +15,8 @@ root.render(
     {/* <App /> */}
     {/* <Counter /> */}
     {/* <CounterP /> */}
-    <Users />
+    {/* <Users /> */}
+    <Products />
   </React.StrictMode>
 );
 
