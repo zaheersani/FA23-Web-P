@@ -9,6 +9,8 @@ import reportWebVitals from './reportWebVitals';
 import Users from './users-q';
 import Products from './products-p';
 
+import APICall from './APICall-q';
+
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
@@ -16,7 +18,8 @@ root.render(
     {/* <Counter /> */}
     {/* <CounterP /> */}
     {/* <Users /> */}
-    <Products />
+    {/* <Products /> */}
+    <APICall />
   </React.StrictMode>
 );
 
