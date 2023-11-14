@@ -10,6 +10,7 @@ import Users from './users-q';
 import Products from './products-p';
 
 import APICall from './APICall-q';
+import APICallP from './APICall-p';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
@@ -19,7 +20,8 @@ root.render(
     {/* <CounterP /> */}
     {/* <Users /> */}
     {/* <Products /> */}
-    <APICall />
+    {/* <APICall /> */}
+    <APICallP />
   </React.StrictMode>
 );
 
